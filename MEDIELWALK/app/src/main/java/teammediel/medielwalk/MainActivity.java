@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.op_jugadores:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new CaloriesFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ComidasFavoritas()).commit();
 
                 break;
             case R.id.op_salir:

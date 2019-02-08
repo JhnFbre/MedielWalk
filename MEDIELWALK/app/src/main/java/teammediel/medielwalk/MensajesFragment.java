@@ -7,6 +7,6 @@ import android.view.ViewGroup;
 public class MensajesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.mensajes, viewGroup, false);
+        return inflater.inflate(R.layout.agregar_comidas, viewGroup, false);
     }
 }

@@ -28,7 +28,7 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
                 CercaDeTiFragment near = new CercaDeTiFragment ();
                 return near;
             case 2:
-                ResumenFragment everybody = new ResumenFragment();
+                ComidasFavoritas everybody = new ComidasFavoritas();
                 return everybody;
             default:
                 return null;
