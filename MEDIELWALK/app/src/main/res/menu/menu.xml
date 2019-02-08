@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/op_juego"
+            android:title="@string/qcalorias"
+            android:icon="@drawable/ic_game"
+            android:orderInCategory="100">
+        </item>
+        <item android:id="@+id/op_perfil"
+            android:title="@string/perfil"
+            android:icon="@drawable/ic_perfil"
+            android:orderInCategory="100">
+        </item>
+        <item android:id="@+id/op_jugadores"
+            android:title="@string/calorias"
+            android:icon="@drawable/ic_creditos"
+            android:orderInCategory="100">
+        </item>
+        <item android:id="@+id/op_resumen"
+            android:title="@string/resumen"
+            android:icon="@drawable/ic_resumen"
+            android:orderInCategory="100">
+        </item>
+        <item android:id="@+id/op_salir"
+            android:title="Salir"
+            android:icon="@drawable/ic_game"
+            android:orderInCategory="100">
+        </item>
+    </group>
+
+</menu>

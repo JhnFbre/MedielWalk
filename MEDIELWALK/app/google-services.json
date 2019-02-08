@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "596290032967",
+    "firebase_url": "https://spooky-f7aae.firebaseio.com",
+    "project_id": "spooky-f7aae",
+    "storage_bucket": "spooky-f7aae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596290032967:android:9979f1d2e05155ab",
+        "android_client_info": {
+          "package_name": "teammediel.medielwalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596290032967-f9cbahkunmmqb18ohqh9gr8bjklcrogr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "teammediel.medielwalk",
+            "certificate_hash": "0f0b2e70d3acf7a8b3f2eec0de3d3f6623ae8e66"
+          }
+        },
+        {
+          "client_id": "596290032967-f08omblm0r3avliq2657r5jbgcdkh6vr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeSWDZQ5s9RYC_7aTuOLQT7Ih7VZmBGS8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596290032967-f08omblm0r3avliq2657r5jbgcdkh6vr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
