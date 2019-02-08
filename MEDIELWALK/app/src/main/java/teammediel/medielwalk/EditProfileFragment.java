@@ -41,7 +41,7 @@ public class EditProfileFragment extends Fragment {
     ProgressBar pro3;
     UnToast toast;
     private RadioGroup genero;
-    EditText editName,editAge,editAltura,editPeso;
+    EditText editName,editAge;
     Button btnUpdate;
     private String gender;
     @Override

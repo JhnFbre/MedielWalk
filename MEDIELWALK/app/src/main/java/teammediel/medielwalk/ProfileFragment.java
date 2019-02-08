@@ -37,9 +37,7 @@ public class ProfileFragment extends Fragment {
         showName = (TextView) view.findViewById(R.id.name);
         showUser = (TextView) view.findViewById(R.id.user);
         showGender = (TextView) view.findViewById(R.id.gender);
-        showAltura = (TextView) view.findViewById(R.id.altura);
         showAge = (TextView) view.findViewById(R.id.age);
-        showPeso = (TextView) view.findViewById(R.id.peso);
 
        btnEdit = (Button) view.findViewById(R.id.edit);
         btnEdit.setOnClickListener(new View.OnClickListener() {
@@ -115,14 +113,10 @@ public class ProfileFragment extends Fragment {
                 Log.d("El id es",jsonObject.optString("id"));
                 nameUser = jsonObject.optString("name");
                 userName = jsonObject.optString("usuario");
-                contactUser = jsonObject.optString("peso");
-                forceUser = jsonObject.optString("altura");
                 genderUser = jsonObject.optString("sexo");
                 ageUser = jsonObject.optString("edad");
                 showName.setText(nameUser);
                 showUser.setText("@"+userName);
-                showAltura.setText(contactUser);
-                showPeso.setText(forceUser);
                 showGender.setText(genderUser);
                 showAge.setText(ageUser+" "+"años");
 

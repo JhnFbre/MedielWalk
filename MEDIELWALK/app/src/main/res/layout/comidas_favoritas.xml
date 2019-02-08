@@ -5,5 +5,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="Mis Comidas Favoritas"
+        android:textColor="@color/greenhigh"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
