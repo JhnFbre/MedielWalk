@@ -44,33 +44,44 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="20sp">
 
-                <ImageView
+                <Button
                     android:id="@+id/soda"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/soda" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/soda"
+                    android:text="Refresco  \n 355 ml"
 
-                <ImageView
+                 />
+
+                <Button
                     android:id="@+id/icream"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/icecream" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/icecream"
+                    android:text="Helado  \n 100g"/>
 
-                <ImageView
+                <Button
                     android:id="@+id/chocolate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chocolate" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/chocolate"
+                    android:text="Choco \n 100g"/>
 
-                <ImageView
+                <Button
                     android:id="@+id/coffe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/coffee" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/coffee"
+                    android:text="café+lec  \n 200 ml"
+                    />
             </LinearLayout>
 
 
@@ -80,33 +91,41 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="20sp">
 
-                <ImageView
+                <Button
                     android:id="@+id/pizza"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/pizza" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/pizza"
+                    android:text="Pizza \n 100g" />
 
-                <ImageView
+                <Button
                     android:id="@+id/hamburger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/hamburger" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/hamburger"
+                    android:text="HB  \n 100g"/>
 
-                <ImageView
+                <Button
                     android:id="@+id/palomitas"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/popcorn" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/popcorn"
+                    android:text="Canguil  \n 100g"/>
 
-                <ImageView
+                <Button
                     android:id="@+id/hotdog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/hotdog" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/hotdog"
+                    android:text="Hot Dog  \n 100g" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -114,33 +133,41 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="20sp">
 
-                <ImageView
+                <Button
                     android:id="@+id/cakeslice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/cakeslice" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/cakeslice"
+                    android:text="Cake \n 100g"/>
 
-                <ImageView
+                <Button
                     android:id="@+id/cupcake"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/cupcake" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/cupcake"
+                    android:text="cupcake  \n 100g" />
 
-                <ImageView
-                    android:id="@+id/cake"
+                <Button
+                    android:id="@+id/panBlanco"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/cake" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/bread"
+                    android:text="Pan Bl \n 100g" />
 
-                <ImageView
+                <Button
                     android:id="@+id/dona"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/doughnut" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/doughnut"
+                    android:text="Dona Cho.  \n 100g" />
             </LinearLayout>
 
             <LinearLayout
@@ -149,33 +176,42 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="20sp">
 
-                <ImageView
+                <Button
                     android:id="@+id/chicken"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chicken" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/chicken"
+                    android:text="Pollo fri.  \n 100g" />
 
-                <ImageView
+                <Button
                     android:id="@+id/sandwich"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/sandwich" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/sandwich"
+                    android:text="Que.+Hue.  \n 100g"/>
 
-                <ImageView
+                <Button
                     android:id="@+id/chips"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/chips" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/chips"
+                    android:text="Snack  \n 45g"
+                   />
 
-                <ImageView
+                <Button
                     android:id="@+id/french"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/frenchfries" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/frenchfries"
+                    android:text="papas fri.  \n 100g" />
             </LinearLayout>
 
 

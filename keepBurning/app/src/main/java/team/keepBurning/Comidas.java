@@ -1,6 +1,6 @@
 package team.keepBurning;
 
-public class User {
+public class Comidas {
 
     public String getUserId() {
         return userId;
@@ -58,7 +58,7 @@ public class User {
         this.phone = phone;
     }
 
-    public User(String userId, String name, String age, String email, String pass, String gender, String phone){
+    public Comidas(String userId, String name, String age, String email, String pass, String gender, String phone){
         this.userId=userId;
         this.name= name;
         this.age= age;
@@ -72,7 +72,7 @@ public class User {
 
     }
 
-    public User(String userId, String name,  String email, String pass, String age){
+    public Comidas(String userId, String name, String email, String pass, String age){
         this.userId=userId;
 
         this.email = email;
@@ -80,7 +80,7 @@ public class User {
         this.pass= age;
 
     }
-    public User(String userId, String name,  String email, String pass){
+    public Comidas(String userId, String name, String email, String pass){
         this.userId=userId;
 
         this.email = email;

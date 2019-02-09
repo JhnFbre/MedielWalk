@@ -12,8 +12,5 @@ public class CaloriesFragment extends Fragment {
         return inflater.inflate(R.layout.calories, viewGroup, false);
     }
 
-    public void prueba(View v){
-
-    }
 
 }

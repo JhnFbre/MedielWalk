@@ -20,6 +20,6 @@
     <color name="yellowLogo">#e0cb5e</color>
     <color name="redLogo">#cf6b78</color>
     <color name="seg">#f7af48</color>
-
+    <color name="transparent">"#00000000"</color>
 
 </resources>
