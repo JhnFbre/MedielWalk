@@ -27,78 +27,161 @@
                 android:drawablePadding="0dp"
                 app:srcCompat="@drawable/up" />
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="¿Qué comiste?"
+                android:textColor="@color/greenhigh"
+                android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
 
-                <TextView
-                    android:id="@+id/totalCal"
-                    android:layout_width="122dp"
+                <ImageView
+                    android:id="@+id/soda"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Calorías Diarias Reconemdadas:"
-                    android:textColor="@color/fontone"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/soda" />
 
-                <TextView
-                    android:id="@+id/calorias"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/icream"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/redondear"
-                    android:ems="10"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:textColor="#333333"
-                    android:textColorHint="@android:color/darker_gray"
-                    android:textStyle="normal" />
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/icecream" />
+
+                <ImageView
+                    android:id="@+id/chocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/chocolate" />
+
+                <ImageView
+                    android:id="@+id/coffe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/coffee" />
             </LinearLayout>
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
 
-                <TextView
-                    android:id="@+id/totalCalusadas"
-                    android:layout_width="122dp"
+                <ImageView
+                    android:id="@+id/pizza"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Calorías consumidas:"
-                    android:textColor="@color/fontone"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pizza" />
 
-                <TextView
-                    android:id="@+id/caloriasUsadas"
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/hamburger"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/redondear"
-                    android:ems="10"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:textColor="#333333"
-                    android:textColorHint="@android:color/darker_gray"
-                    android:textStyle="normal" />
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/hamburger" />
 
+                <ImageView
+                    android:id="@+id/palomitas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/popcorn" />
+
+                <ImageView
+                    android:id="@+id/hotdog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/hotdog" />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
 
+                <ImageView
+                    android:id="@+id/cakeslice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cakeslice" />
+
+                <ImageView
+                    android:id="@+id/cupcake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cupcake" />
+
+                <ImageView
+                    android:id="@+id/cake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/cake" />
+
+                <ImageView
+                    android:id="@+id/dona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/doughnut" />
+            </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
 
+                <ImageView
+                    android:id="@+id/chicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/chicken" />
 
+                <ImageView
+                    android:id="@+id/sandwich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/sandwich" />
+
+                <ImageView
+                    android:id="@+id/chips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/chips" />
+
+                <ImageView
+                    android:id="@+id/french"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/frenchfries" />
             </LinearLayout>
+
+
+
         </LinearLayout>
+
+
     </ScrollView>
 
 
