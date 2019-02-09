@@ -1,6 +1,8 @@
 package team.keepBurning;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
             case R.id.op_salir:
+                saveLoginSharedPreferences();
                 Intent intent= new Intent(MainActivity.this, Login.class);
                 startActivity(intent);
                 break;
@@ -76,5 +79,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return true;
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    private void saveLoginSharedPreferences() {
+        SharedPreferences sharedPreferences = getSharedPreferences("login_preference",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("id","");
+        editor.commit();
     }
 }
