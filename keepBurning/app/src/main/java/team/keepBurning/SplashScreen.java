@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -31,7 +32,8 @@ public class SplashScreen extends Activity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-              validar();
+                   validar();
+                    Log.d("despues validar","ouch");
                 }
             },2500);
 
@@ -40,9 +42,11 @@ public class SplashScreen extends Activity {
         }
 
         public void validar(){
-            String sesioniciada=getFromSharedPreferences("usuario");
+            String sesioniciada=getFromSharedPreferences(this,"id");
                     /*Intent intent= new Intent(SplashScreen.this, Empezar.class);
+
                     startActivity(intent);*/
+            Log.d("sesion iniciada",sesioniciada);
             if (sesioniciada!=""){
                 Intent intent = new Intent(SplashScreen.this, MainActivity.class);
                 startActivity(intent);
@@ -55,9 +59,10 @@ public class SplashScreen extends Activity {
     private void printKeyHash(){
 
     }
-    private String getFromSharedPreferences(String usuario) {
-        SharedPreferences sharedPre = getSharedPreferences("login_preference",Context.MODE_PRIVATE);
-        return  sharedPre.getString(usuario,"");
+    public static String getFromSharedPreferences(Context context,String usuario) {
+
+        SharedPreferences preferences = context.getSharedPreferences("login_preference", MODE_PRIVATE);
+        return preferences.getString(usuario, "");
 
     }
 
