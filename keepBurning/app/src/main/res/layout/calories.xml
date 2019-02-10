@@ -38,6 +38,145 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
+
+                <Button
+                    android:id="@+id/bolonq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/iconoqueso"
+                    android:text="1 Bolon  \n queso"
+
+                    />
+
+                <Button
+                    android:id="@+id/bolonch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/iconochicharron"
+                    android:text="1 bolon  \n chi."/>
+
+                <Button
+                    android:id="@+id/bolonmx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/iconomixto"
+                    android:text="1 bolon \n mixto"/>
+
+                <Button
+                    android:id="@+id/patacon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/iconopatacones"
+                    android:text="Patacon  \n 200g"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
+
+                <Button
+                    android:id="@+id/empanada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/empanadas"
+                    android:text="1 Empanada  "
+
+                    />
+
+                <Button
+                    android:id="@+id/shawarma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/shawarma"
+                    android:text=" 1 shawarma "/>
+
+                <Button
+                    android:id="@+id/pancake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/pancakes"
+                    android:text="1 \n Pancake"/>
+
+                <Button
+                    android:id="@+id/taco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/taco"
+                    android:text="1 \n taco"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
+
+                <Button
+                    android:id="@+id/papipollo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/iconopapipollo"
+                    android:text="1 por. Papi-pollo "
+
+                    />
+
+                <Button
+                    android:id="@+id/salchipapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/iconosalchipapa"
+                    android:text="1 por. Salchi-papa"/>
+
+                <Button
+                    android:id="@+id/rice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/rice"
+                    android:text="1 Porcion-Arroz"/>
+
+                <Button
+                    android:id="@+id/galletas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/gingerbreadman"
+                    android:text="Galletas   28g"
+                    />
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

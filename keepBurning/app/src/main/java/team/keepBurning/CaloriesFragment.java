@@ -76,18 +76,18 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         sandwich.setOnClickListener(this);
         snack.setOnClickListener(this);
         french.setOnClickListener(this);
-        shawarma.setOnClickListener(this);
-        bolonq.setOnClickListener(this);
-        bolonc.setOnClickListener(this);
-        bolonmx.setOnClickListener(this);
-        patacon.setOnClickListener(this);
-        empanada.setOnClickListener(this);
-        pancake.setOnClickListener(this);
-        taco.setOnClickListener(this);
-        salchipapa.setOnClickListener(this);
-        papipollo.setOnClickListener(this);
-        arroz.setOnClickListener(this);
-        galletas.setOnClickListener(this);
+         shawarma.setOnClickListener(this);
+         bolonq.setOnClickListener(this);
+         bolonc.setOnClickListener(this);
+         bolonmx.setOnClickListener(this);
+         patacon.setOnClickListener(this);
+         empanada.setOnClickListener(this);
+         pancake.setOnClickListener(this);
+         taco.setOnClickListener(this);
+         salchipapa.setOnClickListener(this);
+         papipollo.setOnClickListener(this);
+         arroz.setOnClickListener(this);
+         galletas.setOnClickListener(this);
 
         myDialog = new Dialog(getActivity());
 
@@ -128,9 +128,6 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         arreglo[27] = new Comidas("galleta",136,28, "Galleta");
 
     }
-
-
-
     @Override
     public void onClick(View v) {
         String nam="",calor="",por="";
@@ -140,15 +137,14 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         String namet= getResources().getResourceEntryName(v.getId());
         // Toast.makeText(getActivity(),namet,Toast.LENGTH_LONG).show();
         for (Comidas s : arreglo)
-            if(namet.equals(s.nombre)){
-                nam=s.etiqueta;
-                c=s.calorias;
-                p=s.porcion;
-                calor=String.valueOf(c);
-                por=String.valueOf(p);
-                ShowPopup(v,nam,calor,por);
-            }
-
+           if(namet.equals(s.nombre)){
+            nam=s.etiqueta;
+            c=s.calorias;
+            p=s.porcion;
+            calor=String.valueOf(c);
+            por=String.valueOf(p);
+               ShowPopup(v,nam,calor,por);
+           }
     }
 
 
