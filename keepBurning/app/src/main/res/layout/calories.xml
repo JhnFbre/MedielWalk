@@ -53,7 +53,7 @@
                     android:drawableTop="@drawable/soda"
                     android:text="Refresco  \n 355 ml"
 
-                 />
+                    />
 
                 <Button
                     android:id="@+id/icream"

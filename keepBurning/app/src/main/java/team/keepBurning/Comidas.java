@@ -2,98 +2,45 @@ package team.keepBurning;
 
 public class Comidas {
 
-    public String getUserId() {
-        return userId;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getName() {
-        return name;
+    public Integer getCalorias() {
+        return calorias;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCalorias(Integer calorias) {
+        this.calorias = calorias;
     }
 
-    public String getAge() {
-        return age;
+    public Integer getPorcion() {
+        return porcion;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setPorcion(Integer porcion) {
+        this.porcion = porcion;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPass() {
-        return pass;
-    }
-
-    public void setPass(String pass) {
-        this.pass = pass;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public Comidas(String userId, String name, String age, String email, String pass, String gender, String phone){
-        this.userId=userId;
-        this.name= name;
-        this.age= age;
-        this.email = email;
-        this.pass= pass;
-        this.gender= gender;
-        this.phone= phone;
+    public Comidas(String nombre, int calorias, int porcion){
+        this.nombre=nombre;
+        this.calorias= calorias;
+        this.porcion= porcion;
 
 
 
 
     }
 
-    public Comidas(String userId, String name, String email, String pass, String age){
-        this.userId=userId;
 
-        this.email = email;
-        this.pass= pass;
-        this.pass= age;
 
-    }
-    public Comidas(String userId, String name, String email, String pass){
-        this.userId=userId;
+    String nombre;
+    Integer calorias;
+    Integer porcion;
 
-        this.email = email;
-        this.pass= pass;
-
-    }
-
-    String userId;
-    String name;
-    String age;
-    String email;
-    String pass;
-    String gender;
-    String phone;
 
 }
