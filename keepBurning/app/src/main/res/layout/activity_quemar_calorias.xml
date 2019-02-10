@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapaContainer">
+    tools:context=".QuemarCalorias">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,43 +12,43 @@
         android:gravity="center_vertical"
         android:orientation="vertical">
 
-        <TextView
+        <EditText
             android:id="@+id/tvtiempo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:gravity="center_horizontal|clip_vertical"
-            android:padding="15dp"
+            android:padding="0dp"
             android:text="@string/cantidad"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="30sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/tvnomcomida"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/cantidad" />
 
-        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <FrameLayout
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="250dp"
             tools:context=".Mapa" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorPrimary"
+            android:gravity="center"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="15dp">
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/textView4"
@@ -58,7 +58,7 @@
                     android:text="@string/pasos"
                     android:textColor="@color/colorPrimaryDark" />
 
-                <TextView
+                <EditText
                     android:id="@+id/tvpasos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -69,9 +69,9 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="15dp">
+                android:padding="5dp">
 
                 <TextView
                     android:id="@+id/textView6"
@@ -81,7 +81,7 @@
                     android:text="@string/calquema"
                     android:textColor="@color/colorPrimaryDark" />
 
-                <TextView
+                <EditText
                     android:id="@+id/tvcalorias"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -89,6 +89,16 @@
                     android:text="@string/cantidad"
                     android:textColor="@color/colorPrimaryDark" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/cancelar"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/cancelar"
+                android:textSize="14sp" />
         </LinearLayout>
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

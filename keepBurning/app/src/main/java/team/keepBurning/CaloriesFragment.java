@@ -2,7 +2,10 @@ package team.keepBurning;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -143,11 +146,18 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
             p=s.porcion;
             calor=String.valueOf(c);
             por=String.valueOf(p);
+               guardarPreferencias(s.etiqueta,s.calorias);
                ShowPopup(v,nam,calor,por);
            }
     }
 
-
+    private void guardarPreferencias(String nombrecomida, int cantidadcaloria){
+        SharedPreferences preferences = getActivity().getSharedPreferences("comida", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("nombrecomida",nombrecomida);
+        editor.putInt("cantidadcaloria", cantidadcaloria);
+        editor.commit();
+    }
 
 
     public void ShowPopup(View v,String nameS, String caloriesS, String porcionS) {
@@ -165,6 +175,16 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         calories.setText(caloriesS);
         porcion.setText(porcionS);
         btnFollow = (Button) myDialog.findViewById(R.id.btnfollow);
+        btnFollow.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            myDialog.dismiss();
+            //Toast toast = Toast.makeText(getContext(), "Ve a Quemar calorías!", Toast.LENGTH_SHORT);
+            //toast.show();
+            Intent intent = new Intent(getActivity(), QuemarCalorias.class);
+            startActivity(intent);
+        }
+        });
         txtclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

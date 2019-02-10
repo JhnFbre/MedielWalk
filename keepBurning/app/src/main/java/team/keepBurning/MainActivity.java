@@ -3,6 +3,10 @@ package team.keepBurning;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,8 +17,10 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, SensorEventListener {
     private android.support.v7.widget.Toolbar toolbar;
+    SensorManager sensorManager;
+    Sensor sensor;
     private DrawerLayout drawer;
     private NavigationView nv;
     @Override
@@ -24,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         drawer = findViewById(R.id.drawer);
         nv= findViewById(R.id.navigation_view);
         nv.setNavigationItemSelectedListener(this);
@@ -34,8 +40,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         if(savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new QuemarCalorias()).commit();
-            nv.setCheckedItem(R.id.op_juego);
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new CaloriesFragment()).commit();
+            nv.setCheckedItem(R.id.op_jugadores);
         }
     }
 
@@ -52,16 +58,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
-            case R.id.op_juego:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new QuemarCalorias()).commit();
-                break;
-            case R.id.op_perfil:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
-                break;
-
             case R.id.op_jugadores:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new CaloriesFragment()).commit();
 
+                break;
+            case R.id.op_perfil:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
                 break;
             case R.id.op_salir:
                 saveLoginSharedPreferences();
@@ -86,5 +88,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("id","");
         editor.commit();
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        Sensor sensor= event.sensor;
+        if(sensor.getType() == Sensor.TYPE_STEP_COUNTER){
+            String pasitos= String.valueOf(event.values[0]);
+            SharedPreferences preferences = getSharedPreferences("comida", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("pasitos",pasitos);
+            editor.commit();
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
     }
 }
