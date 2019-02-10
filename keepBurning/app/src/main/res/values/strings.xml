@@ -18,6 +18,10 @@
     <string name="edad">Edad</string>
     <string name="pais">País</string>
     <string name="tienda">Tienda</string>
+    <string name="tiempo">Tiempo</string>
+    <string name="cantidad">0</string>
+    <string name="calquema">Calorias Quemadas</string>
+    <string name="pasosrealizados">Pasos </string>
     <string name="jugadores">Jugadores</string>
     <string name="entrar">Entrar</string>
     <string name="sincuenta">¿Aún no tienes cuenta? Regístrate</string>

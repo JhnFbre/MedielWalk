@@ -18,11 +18,6 @@
             android:icon="@drawable/ic_creditos"
             android:orderInCategory="100">
         </item>
-        <item android:id="@+id/op_resumen"
-            android:title="@string/resumen"
-            android:icon="@drawable/ic_resumen"
-            android:orderInCategory="100">
-        </item>
         <item android:id="@+id/op_salir"
             android:title="Salir"
             android:icon="@drawable/ic_game"

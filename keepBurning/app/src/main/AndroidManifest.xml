@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,15 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name="team.keepBurning.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="team.keepBurning.Empezar"
+            android:name=".Empezar"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="team.keepBurning.SplashScreen"
+            android:name=".SplashScreen"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
             android:label="@string/app_name"
@@ -38,13 +37,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="team.keepBurning.Login"
+            android:name=".Login"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name="team.keepBurning.Registro"
+            android:name=".Registro"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -58,8 +57,10 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="team.keepBurning.Mapa"
-            android:label="@string/title_activity_mapa"></activity>
+            android:name=".Mapa"
+            android:label="@string/title_activity_mapa" />
+        <activity android:name=".QuemarCalorias"
+                  android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

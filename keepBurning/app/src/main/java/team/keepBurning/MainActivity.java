@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         if(savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new MapaFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new QuemarCalorias()).commit();
             nv.setCheckedItem(R.id.op_juego);
         }
     }
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
             case R.id.op_juego:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new MapaFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new QuemarCalorias()).commit();
                 break;
             case R.id.op_perfil:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, new ProfileFragment()).commit();
