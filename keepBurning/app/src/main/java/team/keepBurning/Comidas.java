@@ -6,7 +6,16 @@ public class Comidas {
         return nombre;
     }
 
+    public String getEtiqueta() {
+        return etiqueta;
+    }
+
+    public void setEtiqueta(String etiqueta) {
+        this.etiqueta = etiqueta;
+    }
+
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 
@@ -26,11 +35,11 @@ public class Comidas {
         this.porcion = porcion;
     }
 
-    public Comidas(String nombre, int calorias, int porcion){
+    public Comidas(String nombre, int calorias, int porcion, String etiqueta){
         this.nombre=nombre;
         this.calorias= calorias;
         this.porcion= porcion;
-
+this.etiqueta= etiqueta;
 
 
 
@@ -41,6 +50,6 @@ public class Comidas {
     String nombre;
     Integer calorias;
     Integer porcion;
-
+String etiqueta;
 
 }

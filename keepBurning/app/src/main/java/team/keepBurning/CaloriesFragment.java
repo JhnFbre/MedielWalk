@@ -21,10 +21,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class CaloriesFragment extends Fragment implements View.OnClickListener{
-    public Comidas arreglo []= new Comidas[16];
+    public Comidas arreglo []= new Comidas[28];
     View view;
     Button soda,icrecream,chocolate,coffe,pizza,hamurguer,hotdog,popcorn,cakeslice,cupcake,bread,donut,chicken,sandwich,
-    snack,french;
+    snack,french,shawarma,bolonq,bolonc,bolonmx,patacon,empanada,pancake,taco,salchipapa,papipollo,arroz,galletas;
 
     Dialog myDialog;
 
@@ -48,6 +48,18 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         sandwich = (Button) view.findViewById(R.id.sandwich);
         snack = (Button) view.findViewById(R.id.chips);
         french = (Button) view.findViewById(R.id.french);
+        shawarma= (Button) view.findViewById(R.id.shawarma);
+        bolonc= (Button) view.findViewById(R.id.bolonch);
+        bolonq = (Button) view.findViewById(R.id.bolonq);
+        bolonmx= (Button) view.findViewById(R.id.bolonmx);
+        patacon= (Button) view.findViewById(R.id.patacon);
+        empanada= (Button) view.findViewById(R.id.empanada);
+        pancake= (Button) view.findViewById(R.id.pancake);
+        taco= (Button) view.findViewById(R.id.taco);
+        salchipapa= (Button) view.findViewById(R.id.salchipapa);
+        papipollo= (Button) view.findViewById(R.id.papipollo);
+        arroz= (Button) view.findViewById(R.id.rice);
+        galletas= (Button) view.findViewById(R.id.galletas);
         soda.setOnClickListener(this);
         icrecream.setOnClickListener(this);
         chocolate.setOnClickListener(this);
@@ -64,30 +76,56 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         sandwich.setOnClickListener(this);
         snack.setOnClickListener(this);
         french.setOnClickListener(this);
+         shawarma.setOnClickListener(this);
+         bolonq.setOnClickListener(this);
+         bolonc.setOnClickListener(this);
+         bolonmx.setOnClickListener(this);
+         patacon.setOnClickListener(this);
+         empanada.setOnClickListener(this);
+         pancake.setOnClickListener(this);
+         taco.setOnClickListener(this);
+         salchipapa.setOnClickListener(this);
+         papipollo.setOnClickListener(this);
+         arroz.setOnClickListener(this);
+         galletas.setOnClickListener(this);
 
         myDialog = new Dialog(getActivity());
+
 
 
         return view;
 
     }
       public void llenarArray(){
-          arreglo[0] = new Comidas("icream",207,200);
-          arreglo[1] = new Comidas("chocolate",556,200);
-          arreglo[2] = new Comidas("coffe",110,200);
-          arreglo[3] = new Comidas("pizza",255,100);
-          arreglo[4] = new Comidas("hamburger",295,100);
-          arreglo[5] = new Comidas("palomitas",375,100);
-          arreglo[6] = new Comidas("hotdog",290,100);
-          arreglo[7] = new Comidas("soda",355,355);
-          arreglo[8] = new Comidas("cakeslices",257,100);
-          arreglo[9] = new Comidas("cupcake",305,100);
-          arreglo[10] = new Comidas("panBlanco",265,100);
-          arreglo[11] = new Comidas("dona",417,100);
-          arreglo[12] = new Comidas("chicken",246,100);
-          arreglo[13] = new Comidas("sandwich",233,100);
-          arreglo[14] = new Comidas("chips",228,45);
-          arreglo[15] = new Comidas("french.",312,100);
+          arreglo[0] = new Comidas("icream",207,200,"Helado");
+          arreglo[1] = new Comidas("chocolate",556,200,"1 Barra de chocolate");
+          arreglo[2] = new Comidas("coffe",110,200,"1 Taza de café con Leche");
+          arreglo[3] = new Comidas("pizza",255,100,"1 Rebanada de Pizza");
+          arreglo[4] = new Comidas("hamburger",295,100,"1 Hamburguesa");
+          arreglo[5] = new Comidas("palomitas",375,100,"1 Porción de canguil");
+          arreglo[6] = new Comidas("hotdog",290,100,"1 Hot Dog");
+          arreglo[7] = new Comidas("soda",355,355,"1 Soda tradicional");
+          arreglo[8] = new Comidas("cakeslices",257,100,"1 Rebanada de Pastel");
+          arreglo[9] = new Comidas("cupcake",305,100,"1 Cupcake");
+          arreglo[10] = new Comidas("panBlanco",265,100,"1 Pan Blanco");
+          arreglo[11] = new Comidas("dona",417,100,"1 Dona");
+          arreglo[12] = new Comidas("chicken",246,100,"1 Presa de pollo fito");
+          arreglo[13] = new Comidas("sandwich",233,100,"1 Sandwich de queso y huevo");
+          arreglo[14] = new Comidas("chips",228,45, "1 Bolsa de Papitas");
+          arreglo[15] = new Comidas("french.",312,100,"1 Porción de papas");
+          arreglo[16] = new Comidas("shawarma.",150,100, "1 Shawarma");
+          arreglo[17] = new Comidas("bolonq",250,100, "1 Bolon de queso");
+          arreglo[18] = new Comidas("bolonch",300,150, "1 Bolon de Chicharron");
+          arreglo[19] = new Comidas("bolonmx",400,100, "1 Bolon de Mixto");
+          arreglo[20] = new Comidas("patacon",210,100, "1 Porción de Patacones");
+          arreglo[21] = new Comidas("empanada",160,100, "1 Empanada");
+          arreglo[22] = new Comidas("pancake",400,3, "3 Pancakes");
+          arreglo[23] = new Comidas("taco",137,100, "1 Taco");
+          arreglo[24] = new Comidas("papipollo",484,200, "1 Papipollo");
+          //https://www.myfitnesspal.com/es/food/search?page=1&search=salchipapa
+          arreglo[25] = new Comidas("salchipapa",974,400, "1 Salchipapa");
+          arreglo[26] = new Comidas("rice",442,200, "1 taza de arroz");
+          arreglo[27] = new Comidas("galleta",136,28, "Galleta");
 
          }
 
@@ -103,7 +141,7 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
        // Toast.makeText(getActivity(),namet,Toast.LENGTH_LONG).show();
         for (Comidas s : arreglo)
            if(namet.equals(s.nombre)){
-            nam=s.nombre;
+            nam=s.etiqueta;
             c=s.calorias;
             p=s.porcion;
             calor=String.valueOf(c);
