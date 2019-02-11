@@ -62,7 +62,7 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         salchipapa= (Button) view.findViewById(R.id.salchipapa);
         papipollo= (Button) view.findViewById(R.id.papipollo);
         arroz= (Button) view.findViewById(R.id.rice);
-        galletas= (Button) view.findViewById(R.id.galletas);
+        galletas= (Button) view.findViewById(R.id.galleta);
         soda.setOnClickListener(this);
         icrecream.setOnClickListener(this);
         chocolate.setOnClickListener(this);
@@ -108,15 +108,15 @@ public class CaloriesFragment extends Fragment implements View.OnClickListener{
         arreglo[5] = new Comidas("palomitas",375,100,"1 Porción de canguil");
         arreglo[6] = new Comidas("hotdog",290,100,"1 Hot Dog");
         arreglo[7] = new Comidas("soda",355,355,"1 Soda tradicional");
-        arreglo[8] = new Comidas("cakeslices",257,100,"1 Rebanada de Pastel");
+        arreglo[8] = new Comidas("cakeslice",257,100,"1 Rebanada de Pastel");
         arreglo[9] = new Comidas("cupcake",305,100,"1 Cupcake");
         arreglo[10] = new Comidas("panBlanco",265,100,"1 Pan Blanco");
         arreglo[11] = new Comidas("dona",417,100,"1 Dona");
         arreglo[12] = new Comidas("chicken",246,100,"1 Presa de pollo fito");
         arreglo[13] = new Comidas("sandwich",233,100,"1 Sandwich de queso y huevo");
         arreglo[14] = new Comidas("chips",228,45, "1 Bolsa de Papitas");
-        arreglo[15] = new Comidas("french.",312,100,"1 Porción de papas");
-        arreglo[16] = new Comidas("shawarma.",150,100, "1 Shawarma");
+        arreglo[15] = new Comidas("french",312,100,"1 Porción de papas");
+        arreglo[16] = new Comidas("shawarma",150,100, "1 Shawarma");
         arreglo[17] = new Comidas("bolonq",250,100, "1 Bolon de queso");
         arreglo[18] = new Comidas("bolonch",300,150, "1 Bolon de Chicharron");
         arreglo[19] = new Comidas("bolonmx",400,100, "1 Bolon de Mixto");

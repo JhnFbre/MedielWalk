@@ -38,6 +38,7 @@ public class Comidas {
     public Comidas(String nombre, int calorias, int porcion, String etiqueta){
         this.nombre=nombre;
         this.calorias= calorias;
+        this.porcion= porcion;
         this.etiqueta= etiqueta;
     }
     String nombre;

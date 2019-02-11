@@ -167,7 +167,7 @@
                     android:text="1 Porcion-Arroz"/>
 
                 <Button
-                    android:id="@+id/galletas"
+                    android:id="@+id/galleta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
